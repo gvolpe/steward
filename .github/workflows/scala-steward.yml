@@ -17,3 +17,5 @@ jobs:
         with:
           github-token: ${{ secrets.REPO_GITHUB_TOKEN }}
           repos-file: 'repos.md'
+          author-email: gvolpe-steward[bot]@users.noreply.github.com
+          author-name: gvolpe-steward[bot]
