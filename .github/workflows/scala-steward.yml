@@ -1,0 +1,17 @@
+on:
+  schedule:
+    - cron: "0 9 * * *" # Every day at 9 am UTC
+  workflow_dispatch:
+
+name: Run Scala Steward on gvolpe's repos
+
+jobs:
+  scala-steward:
+    runs-on: ubuntu-18.04
+    name: Launch Scala Steward
+    steps:
+      - name: Launch Scala Steward
+        uses: scala-steward-org/scala-steward-action@v2.19.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repos-file: 'repos.md'
