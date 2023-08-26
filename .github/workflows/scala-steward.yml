@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "0 9 * * *" # Every day at 9 am UTC
+    - cron: "0 0 * * Sun" # Every Sunday
   workflow_dispatch:
 
 name: Run Scala Steward on gvolpe's repos
