@@ -2,3 +2,4 @@
 - gvolpe/trading
 - profunktor/neutron
 - profunktor/redis4cats
+- profunktor/http4s-jwt-auth
