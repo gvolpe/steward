@@ -7,13 +7,13 @@ name: Run Scala Steward on gvolpe's repos
 
 jobs:
   scala-steward:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     name: Launch Scala Steward
     steps:
       - uses: actions/checkout@v2
 
       - name: Launch Scala Steward
-        uses: scala-steward-org/scala-steward-action@v2.19.0
+        uses: scala-steward-org/scala-steward-action@v2.61.0
         with:
           github-token: ${{ secrets.REPO_GITHUB_TOKEN }}
           repos-file: 'repos.md'
